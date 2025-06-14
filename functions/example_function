@@ -1,6 +1,0 @@
-# vim:et sts=2 sw=2 ft=zsh
-# This is an example function.
-# This will be executed when example_function is called in a Zsh session.
-
-builtin emulate -L zsh
-print "executed function in ${functions_source[${funcstack[1]}]}"
