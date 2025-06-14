@@ -117,10 +117,10 @@ _atuin_init_zsh_integration "${0:h}/atuin--zsh.zsh" atuin init zsh || {
 }
 
 # 生成 atuin 自动补全
-_atuin_generate_completions "${0:h}" atuin gen-completions --shell zsh || {
-  print -u2 "Failed to generate atuin completions"
-  # 补全生成失败不应该阻止插件加载，只是警告
-}
+# _atuin_generate_completions "${0:h}" atuin gen-completions --shell zsh || {
+#   print -u2 "Failed to generate atuin completions"
+#   # 补全生成失败不应该阻止插件加载，只是警告
+# }
 
 # 清理函数（可选）
 if [[ -n "${ZIM_PLUGIN_CLEANUP:-}" ]]; then
