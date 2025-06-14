@@ -15,7 +15,7 @@
 _atuin_init_zsh_integration() {
   # 启用本地作用域和严格模式
   builtin emulate -L zsh
-  setopt LOCAL_OPTIONS WARN_CREATE_GLOBAL
+  setopt LOCAL_OPTIONS  #WARN_CREATE_GLOBAL
   
   # 参数验证和解析
   local -r target_file="${1:?Target file path is required}"
@@ -67,7 +67,7 @@ _atuin_init_zsh_integration() {
 _atuin_generate_completions() {
   # 启用本地作用域和严格模式
   builtin emulate -L zsh
-  setopt LOCAL_OPTIONS WARN_CREATE_GLOBAL
+  setopt LOCAL_OPTIONS # WARN_CREATE_GLOBAL
   
   # 参数验证和解析
   local -r target_dir="${1:?Target directory is required}"
